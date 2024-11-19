@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/backButton9to4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClickBackButton9to4"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Username Input Field -->
+    <EditText
+        android:id="@+id/studentUsernameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Email Input Field -->
+    <EditText
+        android:id="@+id/studentEmailInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentUsernameInput"
+        android:inputType="textEmailAddress" />
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/studentPasswordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentEmailInput"
+        android:inputType="textPassword" />
+
+    <!-- Save Student Button -->
+    <Button
+        android:id="@+id/saveStudentButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Student"
+        android:onClick="onClickSaveStudentButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentPasswordInput"
+        android:layout_marginTop="16dp" />
+
+    <!-- View Students Button -->
+    <Button
+        android:id="@+id/viewStudentsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Students"
+        android:onClick="onClickViewStudentsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saveStudentButton"
+        android:layout_marginTop="16dp" />
+
+    <!-- Remove Student Button -->
+    <Button
+        android:id="@+id/removeStudentButton"
+        android:onClick="onClickRemoveStudentButton"
+        android:text="Remove Student"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewStudentsButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
